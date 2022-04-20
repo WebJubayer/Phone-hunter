@@ -1,0 +1,16 @@
+/* Google font link  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:ital@0;1&display=swap');
+
+/* body style  */
+body{
+    margin: 30px;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(176, 241, 221);
+}
+/* error handler style  */
+#empty-string{
+    display: none;
+}
+#error-input{
+    display: none;
+}
