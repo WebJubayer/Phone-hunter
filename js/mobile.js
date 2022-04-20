@@ -34,13 +34,21 @@ const displayResult = (phones) => {
         phones.forEach(phone => {
             const div = document.createElement('div');
             div.classList.add('col');
-            div.innerHTML
-        })
+            div.innerHTML =
+                `<div class="card border border-info rounded shadow-lg p-3 mb-5 bg-body rounded"> <img src="${phone.image}" class="card-img-top img-fluid p-5" alt="..."> 
+                <div class="card-body">
+                <h5 class="card-title px-5">${phone.brand}</h5> 
+                <p class="card-text px-5">${phone.phone_name}</P>
+                <a href="#details-output" onclick="loadDetails('${phone.slug}')" class="btn btn-info px-5 mx-5 w-75">
+                </div>
+             </div>`
+             result.appendChild(div);
+        });
 
     }
 
-
 }
+
 
 
 
